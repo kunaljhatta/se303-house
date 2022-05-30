@@ -30,6 +30,8 @@ class House
         "the farmer sowing his corn that kept #{segment(number-1)}"
       when 12
         "the horse and the hound and the horn that belonged to #{segment(number-1)}"
+      else
+        "This is #{segment(number)}the house that Jack built.\n"
       end
     end
 
@@ -38,9 +40,9 @@ class House
       end  
   
     def verses
-      [
-        "",
-        "the malt that lay in "
-      ]
+        [
+          "",
+          "the malt that lay in "
+        ]
     end
   end
