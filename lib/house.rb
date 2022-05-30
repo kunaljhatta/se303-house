@@ -9,7 +9,7 @@ class House
       when 1
         "#{verses[number-1]}"
       when 2
-        "the malt that lay in #{segment(number-1)}"
+        "#{verses[number-1]}#{segment(number-1)}"
       when 3
         "the rat that ate #{segment(number-1)}"
       when 4
@@ -34,12 +34,13 @@ class House
     end
 
     def line(number)
-        "This is #{segment(number)}"
+        "This is #{segment(number)}the house that Jack built.\n"
       end  
   
     def verses
       [
-        "the house that Jack built.\n",
+        "",
+        "the malt that lay in "
       ]
     end
   end
