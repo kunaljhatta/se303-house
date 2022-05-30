@@ -1,4 +1,12 @@
 class House
+
+    def recite 
+        (1..12).each.map {|n| line(n)}.join("\n")
+    end 
+
+    def segment
+    end
+
     def line(number)
         case number
         when 1
@@ -28,7 +36,4 @@ class House
         end
     end
 
-    def recite 
-        (1..12).each.map {|n| line(n)}.join("\n")
-    end 
 end
