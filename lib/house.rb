@@ -34,11 +34,6 @@ class House
     end
 
     def line(number)
-        case number
-        when 12
             "This is #{segment(number)}the house that Jack built.\n"
-        else
-            "This is #{segment(number)}the house that Jack built.\n"
-        end
     end
 end
