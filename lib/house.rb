@@ -4,7 +4,7 @@ class House
         (1..12).each.map {|n| line(n)}.join("\n")
     end 
 
-    def segment
+    def segment(number)
     end
 
     def line(number)
