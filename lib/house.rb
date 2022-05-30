@@ -5,6 +5,12 @@ class House
     end 
 
     def segment(number)
+        case number
+        when 1
+          ""
+        else
+          "the malt that lay in "
+        end
     end
 
     def line(number)
