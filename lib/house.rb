@@ -1,19 +1,11 @@
 class House
   
     def recite 
-        (1..12).each.map {|n| line(n)}.join("\n")
+      (1..12).each.map {|n| line(n)}.join("\n")
     end 
 
     def line(number)
       "This is #{verses.last(number).join("")}"
-    end
-  
-    def segment(number)
-      if number == 0
-        ""
-      else
-        "#{verses[number-1]}#{segment(number-1)}"
-      end
     end
   
     def verses
