@@ -13,7 +13,7 @@ class House
       when 3
         "#{verses[number-1]}#{segment(number-1)}"
       when 4
-        "the cat that killed #{segment(number-1)}"
+        "#{verses[number-1]}#{segment(number-1)}"
       when 5
         "the dog that worried #{segment(number-1)}"
       when 6
@@ -43,7 +43,8 @@ class House
         [
           "",
           "the malt that lay in ",
-          "the rat that ate "
+          "the rat that ate ",
+          "the cat that killed "
         ]
     end
   end
