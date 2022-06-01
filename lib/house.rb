@@ -8,6 +8,10 @@ class House
   def recite
     (1..verses.length).collect {|i| line(i)}.join("\n")
   end
+  
+  def intro_to_line
+    "This is"
+  end
 
   def line(line_num)
     "#{intro}#{verses.last(line_num).join(" ")}"
