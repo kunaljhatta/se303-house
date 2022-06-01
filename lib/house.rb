@@ -1,12 +1,14 @@
 class House
   
     def recite 
-      (1..12).each.map {|n| line(n)}.join("\n")
+      (1..verses.length).collect {|i| line(i)}.join("\n")
     end 
 
     def line(number)
       "This is #{verses.last(number).join("")}"
     end
+
+    private
   
     def verses
       [
