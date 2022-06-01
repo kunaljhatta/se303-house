@@ -21,7 +21,7 @@ class House
       when 6
         "#{verses[number-1]}#{segment(number-1)}"
       when 7
-        "the maiden all forlorn that milked #{segment(number-1)}"
+        "#{verses[number-1]}#{segment(number-1)}"
       when 8
         "the man all tattered and torn that kissed #{segment(number-1)}"
       when 9
@@ -48,7 +48,8 @@ class House
           "the rat that ate ",
           "the cat that killed ",
           "the dog that worried ",
-          "the cow with the crumpled horn that tossed "
+          "the cow with the crumpled horn that tossed ",
+          "the maiden all forlorn that milked "
         ]
     end
   end
