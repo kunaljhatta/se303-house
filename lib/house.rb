@@ -3,16 +3,16 @@ class House
   def recite
     (1..verses.length).collect {|i| line(i)}.join("\n")
   end
-  
-  def intro_to_verse
-    "This is"
-  end
 
   def line(number)
     "#{intro_to_verse} #{verses.last(number).join(" ")}"
   end
 
   private
+  
+  def intro_to_verse
+    "This is"
+  end
 
   def verses
     [
@@ -32,8 +32,10 @@ class House
   end
 end
 
-  class PirateHouse < House
-    def intro_to_verse
-      "Thar be"
-    end
+class PirateHouse < House
+  private
+
+  def intro_to_verse
+    "Thar be"
+  end
 end
