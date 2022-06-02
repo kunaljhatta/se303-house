@@ -12,7 +12,7 @@ class House
     "#{intro_to_verse} #{verses.last(number).join(" ")}"
   end
 
-  def random_line
+  def random_line(number)
     "#{intro_to_verse} #{randomize_line_order(number).join(" ")}"
   end
 
@@ -23,7 +23,7 @@ class House
   end
 
   def randomize_line_order(number)
-    (verses.shuffle[1..number] << verse[0])
+    (verses[1..number].shuffle << verses[0])
   end
 
   def verses
