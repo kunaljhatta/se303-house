@@ -3,15 +3,27 @@ class House
   def recite
     (1..verses.length).collect {|i| line(i)}.join("\n")
   end
+  
+  def recite_randomly
+    (1..verses.length).collect {|i| random_line(i)}.join("\n")
+  end
 
   def line(number)
     "#{intro_to_verse} #{verses.last(number).join(" ")}"
+  end
+
+  def random_line
+    "#{intro_to_verse} #{randomize_line_order(number).join(" ")}"
   end
 
   private
   
   def intro_to_verse
     "This is"
+  end
+
+  def randomize_line_order(number)
+    (verses.shuffle[1..number] << verse[0])
   end
 
   def verses
