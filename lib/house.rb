@@ -92,3 +92,6 @@ class RandomHouse < House
   end
 end
 
+# puts RandomHouse.new.recite_randomly
+# puts "\n\n\n\n"
+# puts RandomHouse.new.recite_with_random_verses
